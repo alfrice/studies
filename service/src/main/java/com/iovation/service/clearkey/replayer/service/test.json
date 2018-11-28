@@ -1,0 +1,599 @@
+{
+  "v": "tdm.2.0",
+  "hdr": {
+    "uuid": "756cd378-d6f0-321c-bbe6-6404a07210fb",
+    "msg": "CustAuthAuthCheckPost",
+    "subscriberId": 210700,
+    "accountCode": "nimesh",
+    "timing": {
+      "brs": {
+        "ts": "2017-01-04T21:37:51.290Z",
+        "duration": 0.043
+      },
+      "drs": {
+        "ts": "2017-01-04T21:37:51.217Z",
+        "duration": 0.043
+      },
+      "cust-auth": {
+        "ts": "2017-01-04T21:37:51.212Z",
+        "duration": 0.132
+      }
+    },
+    "errCode": 404,
+    "requestType": "cust-auth",
+    "source": "pdxdv-custard02.vm.iovationnp.com"
+  },
+  "body": {
+    "brs": {
+      "id": "9b3c662102b0d197",
+      "type": "brs",
+      "time": "2017-01-04T21:37:51.290Z",
+      "duration": 0.043,
+      "request": {
+        "headers": {
+          "Authorization": "Basic YnJzOmJycw==",
+          "X-Span-Name": "http:/rules/subscriber/210700/rulesets/default/check",
+          "Accept": "application/json",
+          "X-B3-SpanId": "9b3c662102b0d197",
+          "X-B3-ParentSpanId": "cb2807428e3cf0fd",
+          "X-B3-Sampled": "0",
+          "X-B3-TraceId": "7cee64c5027785f0",
+          "Content-Length": "4034",
+          "Content-Type": "application/vnd.iovation.ruleset-check-v1+json"
+        },
+        "method": "POST",
+        "url": "http://brsV3/rules/subscriber/210700/rulesets/default/check",
+        "body": {
+          "request": {
+            "device": "622314203213941613",
+            "realIpAddress": {
+              "ipAddress": "73.190.86.24",
+              "city": {
+                "name": "Portland",
+                "postalCode": "97213",
+                "metroCode": "820",
+                "areaCode": "503",
+                "timezone": "America/Los_Angeles"
+              },
+              "country": {
+                "name": "United States",
+                "code": "US"
+              },
+              "region": {
+                "id": "OR",
+                "name": "Oregon"
+              },
+              "isp": {
+                "name": "Comcast Cable"
+              },
+              "organization": {
+                "name": "Comcast Cable"
+              },
+              "coordinate": {
+                "latitude": 45.537704,
+                "longitude": -122.6006
+              },
+              "domainName": {
+                "name": "comcast.net"
+              },
+              "networkSpeed": {
+                "id": 2,
+                "name": "CABLEDSL"
+              },
+              "source": "iovation",
+              "identifier": "90a392de-1e2c-38b4-bf5e-d45e38b21941"
+            },
+            "ipAddress": {
+              "ipAddress": "127.0.0.1",
+              "organization": {},
+              "identifier": "b223a9ae-0e6e-3650-b5d3-54afe5119162"
+            },
+            "session": {
+              "deviceType": "MAC",
+              "bbs": [
+                {
+                  "v": "0400",
+                  "tokens": {
+                    "JTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                    "FTOKEN": "HAm+hgcZ9krQYgGuIY8AJixmwC69DgsssV/2Fj4HSc4=",
+                    "WDBTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                    "CTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8="
+                  },
+                  "nuids": {
+                    "FFHASH": "F433A0B50169679E56AEA04403B4342E5683EF4A",
+                    "TZON": "480",
+                    "FENBL": "1",
+                    "JBRVR": "51.0.2704.106",
+                    "JSTIME": "2016/07/11 18:12:46",
+                    "JFLEN": "277",
+                    "FTRIP": "73.190.86.24",
+                    "JBRNM": "CHROME",
+                    "SVRTIME": "2016/07/11 18:12:45",
+                    "JBROS": "INTEL MAC OS X 10_11_1",
+                    "FFONTS": "WEIBEI TC;DIN CONDENSED;SKIA;PINGFANG HK;APPLE CHANCERY;TAMIL SANGAM MN;DIWAN KUFI;APPLE BRAILLE;NOTO SANS RUNIC;IOWAN OLD STYLE;MSHTAKAN;HIRAGINO MARU GOTHIC PRON;NOTO SANS NEW TAI LUE;BRUSH SCRIPT MT;STIXVARIANTS;",
+                    "JENBL": "1",
+                    "JLANG": "EN-US",
+                    "JRES": "900X1440",
+                    "JBRCM": "KHTML, LIKE GECKO",
+                    "HACCLNG": "EN-US,EN;Q=0.8",
+                    "JPLGNS": "WIDEVINECDMADAPTER.PLUGIN;MHJFBMDGCFJBBPAEOJOFOHOEFGIEHJAI;PEPPERFLASHPLAYER.PLUGIN;INTERNAL-NACL-PLUGIN;INTERNAL-PDF-VIEWER;",
+                    "UAGT": "MOZILLA/5.0 (MACINTOSH; INTEL MAC OS X 10_11_1) APPLEWEBKIT/537.36 (KHTML, LIKE GECKO) CHROME/51.0.2704.106 SAFARI/537.36",
+                    "JFLVR": "22.0.0",
+                    "JFSTRL": "3825"
+                  },
+                  "attributes": {
+                    "JSSRC": "pdxprwdp10.iovation.us",
+                    "IGGY": "QyFVBmrZooyh859yQqx0u3Tu4V5ZPp//CENaZ701yNy1JcjmLIa1IlksVPBJwLzH",
+                    "INTLOC": "http://pdxdvreggie01.vm.iovationnp.com:8080/",
+                    "domain": "TP",
+                    "timeSrc": "SVRTIME",
+                    "time": "2016-07-11T18:12:45Z",
+                    "clientVersion": "311",
+                    "bbHash": "9e8dca3e17aac65e32923a60d724c6b6",
+                    "age": "15305106",
+                    "nuidSetHash": "0AD0E7B9AB1D920392BB7AD7F7D17E4E"
+                  }
+                }
+              ],
+              "soapTime": "2017-01-04T21:37:51.174+0000",
+              "tokens": {
+                "JTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "FTOKEN": "HAm+hgcZ9krQYgGuIY8AJixmwC69DgsssV/2Fj4HSc4=",
+                "WDBTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "CTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8="
+              }
+            },
+            "acctCode": "nimesh",
+            "blackbox": {
+              "nuids": {
+                "INTLOC": "HTTP://PDXDVREGGIE01.VM.IOVATIONNP.COM:8080/",
+                "JENBL": "1",
+                "JSSRC": "PDXPRWDP10.IOVATION.US",
+                "UAGT": "MOZILLA/5.0 (MACINTOSH; INTEL MAC OS X 10_11_1) APPLEWEBKIT/537.36 (KHTML, LIKE GECKO) CHROME/51.0.2704.106 SAFARI/537.36",
+                "JTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "HACCLNG": "EN-US,EN;Q=0.8",
+                "JSVER": "311",
+                "TZON": "480",
+                "JSTIME": "2016/07/11 18:12:46",
+                "SVRTIME": "2016/07/11 18:12:45",
+                "JBRNM": "CHROME",
+                "JBRVR": "51.0.2704.106",
+                "JBROS": "INTEL MAC OS X 10_11_1",
+                "JBRCM": "KHTML, LIKE GECKO",
+                "JLANG": "EN-US",
+                "JRES": "900X1440",
+                "JPLGNS": "WIDEVINECDMADAPTER.PLUGIN;MHJFBMDGCFJBBPAEOJOFOHOEFGIEHJAI;PEPPERFLASHPLAYER.PLUGIN;INTERNAL-NACL-PLUGIN;INTERNAL-PDF-VIEWER;",
+                "JFLVR": "22.0.0",
+                "CTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "WDBTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "FENBL": "1",
+                "FTOKEN": "HAm+hgcZ9krQYgGuIY8AJixmwC69DgsssV/2Fj4HSc4=",
+                "JFLEN": "277",
+                "JFSTRL": "3825",
+                "FFHASH": "F433A0B50169679E56AEA04403B4342E5683EF4A",
+                "FFONTS": "WEIBEI TC;DIN CONDENSED;SKIA;PINGFANG HK;APPLE CHANCERY;TAMIL SANGAM MN;DIWAN KUFI;APPLE BRAILLE;NOTO SANS RUNIC;IOWAN OLD STYLE;MSHTAKAN;HIRAGINO MARU GOTHIC PRON;NOTO SANS NEW TAI LUE;BRUSH SCRIPT MT;STIXVARIANTS;",
+                "FTRIP": "73.190.86.24"
+              },
+              "versions": [
+                "0400"
+              ],
+              "attributes": {
+                "timeSrc": "SVRTIME",
+                "time": "2016-07-11T18:12:45Z",
+                "clientVersion": "311",
+                "age": 15305106
+              }
+            }
+          },
+          "uuid": "756cd378-d6f0-321c-bbe6-6404a07210fb",
+          "subscriberCode": "210700",
+          "rulesetName": "default",
+          "eventIdentifier": "d669f0da-0d10-40a5-a43c-6f763f8557bd"
+        }
+      },
+      "response": {
+        "headers": {
+          "X-Frame-Options": "DENY",
+          "Transfer-Encoding": "chunked",
+          "Server": "Jetty(9.2.16.v20160414)",
+          "X-B3-SpanId": "9b3c662102b0d197",
+          "X-Content-Type-Options": "nosniff",
+          "X-B3-Sampled": "0",
+          "X-B3-TraceId": "7cee64c5027785f0",
+          "Pragma": "no-cache",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Application-Context": "brs:deployed",
+          "Date": "Wed, 04 Jan 2017 21:37:51 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 500,
+        "body": {
+          "timestamp": 1483565871339,
+          "status": 500,
+          "error": "Internal Server Error",
+          "exception": "com.iovation.exception.IovationException",
+          "message": "Unexpected problem on server",
+          "path": "/rules/subscriber/210700/rulesets/default/check"
+        }
+      }
+    },
+    "drs": {
+      "id": "f06c149139dbe632",
+      "type": "drs",
+      "time": "2017-01-04T21:37:51.217Z",
+      "duration": 0.043,
+      "request": {
+        "headers": {
+          "Authorization": "Basic ZHJzOmRycw==",
+          "X-Span-Name": "http:/drs/devices",
+          "Accept": "application/json",
+          "X-B3-SpanId": "f06c149139dbe632",
+          "X-B3-ParentSpanId": "7acfd88131b7ff0f",
+          "X-B3-Sampled": "0",
+          "X-B3-TraceId": "7cee64c5027785f0",
+          "Content-Length": "3989",
+          "Content-Type": "application/json"
+        },
+        "method": "POST",
+        "url": "http://drsV3/drs/devices",
+        "body": {
+          "body": {
+            "subscriberId": "210700",
+            "subscriberData": {
+              "userAccount": "nimesh"
+            },
+            "deviceData": {
+              "beginBlackBox": "0400mTR4Z7+BQcwNf94lis1ztjVPc4aVJjdv/td1wvFEIh4JRCr09fS1rKthw7Wh2cfDVW4WxEWbm7/cRsn+DFXgyHVLKa5eUqvJ5dzgojLfFGvNZhMeU+JzHvEHXWNdw7fXmAC0AP0RCF4M9YLJcLTb+jC3o7rRuIcS0QFo8LmqA+UoDvlKqcW/vrGQX4MiEfl8hOobItdRVJYZMHwqr5fdmBaDGKtMaeMugqPh9thdd4OLg+9aginJmamvnOVDH3SzV6i8/tb5alAK/XRNo3H5dMIK6EAX6crirCO+6rf6B/s8/6pAZonv91U8NguKENqeSipYNscDiy7T7W+bd9sPisbGyX63UGtLsfA4ZwOK7G3ClrsFsu9EwYom0RP/1vg4YdgEfiwpXbKyUT11RqjqYfPfBp8j9ZgcSxMKzZMpFJQHzrT9i0BebMDhgphGlniWpiIn/4g7jAmajB1pNw18Bhah37+pYGavyP/U1+EY5mcwZ8YN8wmMvf9hXJfAlmTiXI4fx1tjAlHMRRfayCY1fbmZnC9N+MV72IdccHc397yjjO0ytH1uLbskyA1VRQ7wDX8icOWPZcy4Xo6JR+o8uNh2BeaMmRyX/AQJcg0+Z5BwJlBUbdEMUsfY3KAUWMTYYUcRNcJsz+1j3aE1Kav6TbwSyw9pfmqz6UuNnHpXbCqPaqS7dmS/Ocl5HQBNDFBWeVaYJEF00M2y5rEDAARtF2ONlKQFMFWIfGA9WPh4380ZhZzwCZq88PH1zBzchSJ3QbGQgO20LAJRKmh9kjFoTM7MGw/x38EwfznI74+q21k9i9j//7HIMso+dRnja0s5DJXVrMZwI26qjnjGuSHwyep9wXDoTKUQQlPiadkVLXwMpOFU/WEDIDnv2dxoebAfFDWHi00YdOGocPPOxaV733lHc/g+29iuZ/lrwsKFYh1C4MHuHozkPSBfcDhwAT1jlVRq3JKAXJJyhAFygJNecmNoya05r8BWL4vRfdwnJ5sUUA3pDXHzRas4/GRSXiLQOJa6U5ipFe/I8I7OQmtv8AXYYpvbyv1Lr78jk0VliedrZUGUiOXEdvkNNTM75Qsa4yvRhXnDkIu7S6rzjcWF1kYH7kwYhNA0JImTM7VMyC3ZxFa3nFzXi5XRFVJiVvvKzpv0XaWfq5PKygfgkr6Iw5WVh4PKPjFGGeGrHDQxh1hR6k9YyfqLiq8eT66jEqmg+BzPJgQZfUtu1ghNaO/eyFwFf1jKGg0RSdu3DZ2D0kHs4MFN6DxYoHNLkWrgAsQGp/y9lQYFS7Q3XMPf+2zpaNb92EGzovyp20KaNONrY9qtvi+ZdQsNnpQ2xqnhqterf32XFw6Je+1cul8Wh6qEvR04G6q+BgQxEBxebOPqXaRp6tcsepOd0aYAJ9vQFlhL6Lafs8+bgckvjt05APKsVO36L6OC0lXsR/Ogu1fJTRIQmuuvYVi5iS7fBsNJTtrOd+Mi9Tv+KQNydoT3pTie3JapPI+mzcGlP7h9qOmA9ZQiijn+k5g1ZS7Dq3OgeBgjoHoih95tJk9wzUhPDi/8ROUAsIi7NVB72kzyIWu7UQgjbynOx9gevMBLnZG+870pm1POtVACoepilOAGHugBC+m0Or7G5vEcNxLVbHWi4FSdxiRe33JGH8sp9B/aj6zL3tfFaJhe05cG542YuByl2ZAuabzWfAR0pEIClrzuYzNXGNe5km82EXqcOXo2oAv/M9iuONpYoNfJhbxpxYkhHmNOEU/WEkXJiFpVogTPBC1JFD0jwp8BYQjGSgGki63KXERTtEU4b2i0PWZ2JG9RoXHS73TcCOImBEwDJ8tYdI0=",
+              "beginBlackbox": "0400mTR4Z7+BQcwNf94lis1ztjVPc4aVJjdv/td1wvFEIh4JRCr09fS1rKthw7Wh2cfDVW4WxEWbm7/cRsn+DFXgyHVLKa5eUqvJ5dzgojLfFGvNZhMeU+JzHvEHXWNdw7fXmAC0AP0RCF4M9YLJcLTb+jC3o7rRuIcS0QFo8LmqA+UoDvlKqcW/vrGQX4MiEfl8hOobItdRVJYZMHwqr5fdmBaDGKtMaeMugqPh9thdd4OLg+9aginJmamvnOVDH3SzV6i8/tb5alAK/XRNo3H5dMIK6EAX6crirCO+6rf6B/s8/6pAZonv91U8NguKENqeSipYNscDiy7T7W+bd9sPisbGyX63UGtLsfA4ZwOK7G3ClrsFsu9EwYom0RP/1vg4YdgEfiwpXbKyUT11RqjqYfPfBp8j9ZgcSxMKzZMpFJQHzrT9i0BebMDhgphGlniWpiIn/4g7jAmajB1pNw18Bhah37+pYGavyP/U1+EY5mcwZ8YN8wmMvf9hXJfAlmTiXI4fx1tjAlHMRRfayCY1fbmZnC9N+MV72IdccHc397yjjO0ytH1uLbskyA1VRQ7wDX8icOWPZcy4Xo6JR+o8uNh2BeaMmRyX/AQJcg0+Z5BwJlBUbdEMUsfY3KAUWMTYYUcRNcJsz+1j3aE1Kav6TbwSyw9pfmqz6UuNnHpXbCqPaqS7dmS/Ocl5HQBNDFBWeVaYJEF00M2y5rEDAARtF2ONlKQFMFWIfGA9WPh4380ZhZzwCZq88PH1zBzchSJ3QbGQgO20LAJRKmh9kjFoTM7MGw/x38EwfznI74+q21k9i9j//7HIMso+dRnja0s5DJXVrMZwI26qjnjGuSHwyep9wXDoTKUQQlPiadkVLXwMpOFU/WEDIDnv2dxoebAfFDWHi00YdOGocPPOxaV733lHc/g+29iuZ/lrwsKFYh1C4MHuHozkPSBfcDhwAT1jlVRq3JKAXJJyhAFygJNecmNoya05r8BWL4vRfdwnJ5sUUA3pDXHzRas4/GRSXiLQOJa6U5ipFe/I8I7OQmtv8AXYYpvbyv1Lr78jk0VliedrZUGUiOXEdvkNNTM75Qsa4yvRhXnDkIu7S6rzjcWF1kYH7kwYhNA0JImTM7VMyC3ZxFa3nFzXi5XRFVJiVvvKzpv0XaWfq5PKygfgkr6Iw5WVh4PKPjFGGeGrHDQxh1hR6k9YyfqLiq8eT66jEqmg+BzPJgQZfUtu1ghNaO/eyFwFf1jKGg0RSdu3DZ2D0kHs4MFN6DxYoHNLkWrgAsQGp/y9lQYFS7Q3XMPf+2zpaNb92EGzovyp20KaNONrY9qtvi+ZdQsNnpQ2xqnhqterf32XFw6Je+1cul8Wh6qEvR04G6q+BgQxEBxebOPqXaRp6tcsepOd0aYAJ9vQFlhL6Lafs8+bgckvjt05APKsVO36L6OC0lXsR/Ogu1fJTRIQmuuvYVi5iS7fBsNJTtrOd+Mi9Tv+KQNydoT3pTie3JapPI+mzcGlP7h9qOmA9ZQiijn+k5g1ZS7Dq3OgeBgjoHoih95tJk9wzUhPDi/8ROUAsIi7NVB72kzyIWu7UQgjbynOx9gevMBLnZG+870pm1POtVACoepilOAGHugBC+m0Or7G5vEcNxLVbHWi4FSdxiRe33JGH8sp9B/aj6zL3tfFaJhe05cG542YuByl2ZAuabzWfAR0pEIClrzuYzNXGNe5km82EXqcOXo2oAv/M9iuONpYoNfJhbxpxYkhHmNOEU/WEkXJiFpVogTPBC1JFD0jwp8BYQjGSgGki63KXERTtEU4b2i0PWZ2JG9RoXHS73TcCOImBEwDJ8tYdI0="
+            },
+            "networkData": {
+              "endUserIPAddress": "127.0.0.1"
+            }
+          },
+          "hdr": {
+            "msgType": "CustomerAuthentication",
+            "uuid": "756cd378-d6f0-321c-bbe6-6404a07210fb",
+            "v": "drs.1",
+            "ts": "2017-01-04T21:37:51.216Z"
+          }
+        }
+      },
+      "response": {
+        "headers": {
+          "Transfer-Encoding": "chunked",
+          "X-Ver": "3.14.0-leftovers-SNAPSHOT",
+          "Server": "Jetty(9.2.16.v20160414)",
+          "X-Content-Type-Options": "nosniff",
+          "Pragma": "no-cache",
+          "X-Application-Context": "drs:8090",
+          "Date": "Wed, 04 Jan 2017 21:37:51 GMT",
+          "X-Frame-Options": "DENY",
+          "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+          "X-B3-SpanId": "f06c149139dbe632",
+          "X-B3-Sampled": "0",
+          "X-B3-TraceId": "7cee64c5027785f0",
+          "Expires": "0",
+          "X-XSS-Protection": "1; mode=block",
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "status": 200,
+        "body": {
+          "result": {
+            "recognition": {
+              "stats": {
+                "deviceSummary": {
+                  "alias": "622314203213941613",
+                  "profile": "0urDWYZfzQFnzb31LCsrUw",
+                  "type": "MAC",
+                  "confidence": "A",
+                  "firstSeen": "2016-05-25T06:57:01.387Z",
+                  "matchWeight": 606003,
+                  "found": false,
+                  "new": false
+                },
+                "domainSummaries": {
+                  "TP": {
+                    "deviceIsNew": false,
+                    "valid": true,
+                    "new": false
+                  }
+                },
+                "compositeBbHash": "9e8dca3e17aac65e32923a60d724c6b6",
+                "domains": {
+                  "TP": {
+                    "deviceIsNew": false,
+                    "valid": true,
+                    "new": false
+                  }
+                },
+                "device": {
+                  "alias": "622314203213941613",
+                  "profile": "0urDWYZfzQFnzb31LCsrUw",
+                  "type": "MAC",
+                  "confidence": "A",
+                  "firstSeen": "2016-05-25T06:57:01.387Z",
+                  "matchWeight": 606003,
+                  "found": false,
+                  "new": false
+                }
+              },
+              "deviceResults": {
+                "matched": [
+                  {
+                    "patterns": {
+                      "JTOKEN": {
+                        "TP": [
+                          {
+                            "weight": 80001,
+                            "sig": "e267928615860a63f3d4807cd28af166"
+                          }
+                        ]
+                      },
+                      "FTOKEN": {
+                        "TP": [
+                          {
+                            "weight": 350000,
+                            "sig": "c531107db1e66953b97bc910b1897027"
+                          }
+                        ]
+                      },
+                      "WDBTOKEN": {
+                        "TP": [
+                          {
+                            "weight": 80002,
+                            "sig": "e267928615860a63f3d4807cd28af166"
+                          }
+                        ]
+                      },
+                      "ACCT/NUIDSET/GEO": {
+                        "TP": [
+                          {
+                            "weight": 16000,
+                            "sig": "e9a924f3b785b9bf56f1ad3cfe4b8085"
+                          }
+                        ]
+                      },
+                      "CTOKEN": {
+                        "TP": [
+                          {
+                            "weight": 80000,
+                            "sig": "e267928615860a63f3d4807cd28af166"
+                          }
+                        ]
+                      }
+                    },
+                    "deviceId": "622314203213941613"
+                  }
+                ],
+                "unmatched": {
+                  "patterns": {
+                    "Swarmish": {
+                      "TP": [
+                        {
+                          "weight": 16999,
+                          "sig": "SimilaritySignature{210700:drs:nimesh}"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "originalBlackBox": {
+              "nuids": {
+                "INTLOC": "HTTP://PDXDVREGGIE01.VM.IOVATIONNP.COM:8080/",
+                "JENBL": "1",
+                "JSSRC": "PDXPRWDP10.IOVATION.US",
+                "UAGT": "MOZILLA/5.0 (MACINTOSH; INTEL MAC OS X 10_11_1) APPLEWEBKIT/537.36 (KHTML, LIKE GECKO) CHROME/51.0.2704.106 SAFARI/537.36",
+                "JTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "HACCLNG": "EN-US,EN;Q=0.8",
+                "JSVER": "311",
+                "TZON": "480",
+                "JSTIME": "2016/07/11 18:12:46",
+                "SVRTIME": "2016/07/11 18:12:45",
+                "JBRNM": "CHROME",
+                "JBRVR": "51.0.2704.106",
+                "JBROS": "INTEL MAC OS X 10_11_1",
+                "JBRCM": "KHTML, LIKE GECKO",
+                "JLANG": "EN-US",
+                "JRES": "900X1440",
+                "JPLGNS": "WIDEVINECDMADAPTER.PLUGIN;MHJFBMDGCFJBBPAEOJOFOHOEFGIEHJAI;PEPPERFLASHPLAYER.PLUGIN;INTERNAL-NACL-PLUGIN;INTERNAL-PDF-VIEWER;",
+                "JFLVR": "22.0.0",
+                "CTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "WDBTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                "FENBL": "1",
+                "FTOKEN": "HAm+hgcZ9krQYgGuIY8AJixmwC69DgsssV/2Fj4HSc4=",
+                "JFLEN": "277",
+                "JFSTRL": "3825",
+                "FFHASH": "F433A0B50169679E56AEA04403B4342E5683EF4A",
+                "FFONTS": "WEIBEI TC;DIN CONDENSED;SKIA;PINGFANG HK;APPLE CHANCERY;TAMIL SANGAM MN;DIWAN KUFI;APPLE BRAILLE;NOTO SANS RUNIC;IOWAN OLD STYLE;MSHTAKAN;HIRAGINO MARU GOTHIC PRON;NOTO SANS NEW TAI LUE;BRUSH SCRIPT MT;STIXVARIANTS;",
+                "FTRIP": "73.190.86.24"
+              },
+              "versions": [
+                "0400"
+              ],
+              "attributes": {
+                "timeSrc": "SVRTIME",
+                "time": "2016-07-11T18:12:45Z",
+                "clientVersion": "311",
+                "age": 15305106
+              }
+            },
+            "bbErrors": [],
+            "patternSessionData": {
+              "drsProcessorTimes": [
+                {
+                  "key": "drsCassandra",
+                  "value": 4
+                },
+                {
+                  "key": "regiService",
+                  "value": 6
+                }
+              ]
+            },
+            "bbs": [
+              {
+                "v": "0400",
+                "tokens": {
+                  "JTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                  "FTOKEN": "HAm+hgcZ9krQYgGuIY8AJixmwC69DgsssV/2Fj4HSc4=",
+                  "WDBTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8=",
+                  "CTOKEN": "Psuvc/zpjoZuoT+3R9cwUlXPI7kIdRbAIFFUYwQEyi8="
+                },
+                "nuids": {
+                  "FFHASH": "F433A0B50169679E56AEA04403B4342E5683EF4A",
+                  "TZON": "480",
+                  "FENBL": "1",
+                  "JBRVR": "51.0.2704.106",
+                  "JSTIME": "2016/07/11 18:12:46",
+                  "JFLEN": "277",
+                  "FTRIP": "73.190.86.24",
+                  "JBRNM": "CHROME",
+                  "SVRTIME": "2016/07/11 18:12:45",
+                  "JBROS": "INTEL MAC OS X 10_11_1",
+                  "FFONTS": "WEIBEI TC;DIN CONDENSED;SKIA;PINGFANG HK;APPLE CHANCERY;TAMIL SANGAM MN;DIWAN KUFI;APPLE BRAILLE;NOTO SANS RUNIC;IOWAN OLD STYLE;MSHTAKAN;HIRAGINO MARU GOTHIC PRON;NOTO SANS NEW TAI LUE;BRUSH SCRIPT MT;STIXVARIANTS;",
+                  "JENBL": "1",
+                  "JLANG": "EN-US",
+                  "JRES": "900X1440",
+                  "JBRCM": "KHTML, LIKE GECKO",
+                  "HACCLNG": "EN-US,EN;Q=0.8",
+                  "JPLGNS": "WIDEVINECDMADAPTER.PLUGIN;MHJFBMDGCFJBBPAEOJOFOHOEFGIEHJAI;PEPPERFLASHPLAYER.PLUGIN;INTERNAL-NACL-PLUGIN;INTERNAL-PDF-VIEWER;",
+                  "UAGT": "MOZILLA/5.0 (MACINTOSH; INTEL MAC OS X 10_11_1) APPLEWEBKIT/537.36 (KHTML, LIKE GECKO) CHROME/51.0.2704.106 SAFARI/537.36",
+                  "JFLVR": "22.0.0",
+                  "JFSTRL": "3825"
+                },
+                "attributes": {
+                  "JSSRC": "pdxprwdp10.iovation.us",
+                  "IGGY": "QyFVBmrZooyh859yQqx0u3Tu4V5ZPp//CENaZ701yNy1JcjmLIa1IlksVPBJwLzH",
+                  "INTLOC": "http://pdxdvreggie01.vm.iovationnp.com:8080/",
+                  "domain": "TP",
+                  "timeSrc": "SVRTIME",
+                  "time": "2016-07-11T18:12:45Z",
+                  "clientVersion": "311",
+                  "bbHash": "9e8dca3e17aac65e32923a60d724c6b6",
+                  "age": "15305106",
+                  "nuidSetHash": "0AD0E7B9AB1D920392BB7AD7F7D17E4E"
+                }
+              }
+            ],
+            "locations": {
+              "ipAddress": {
+                "ipAddress": "127.0.0.1",
+                "organization": {},
+                "identifier": "b223a9ae-0e6e-3650-b5d3-54afe5119162"
+              },
+              "realIpAddress": {
+                "ipAddress": "73.190.86.24",
+                "city": {
+                  "name": "Portland",
+                  "postalCode": "97213",
+                  "metroCode": "820",
+                  "areaCode": "503",
+                  "timezone": "America/Los_Angeles"
+                },
+                "country": {
+                  "name": "United States",
+                  "code": "US"
+                },
+                "region": {
+                  "id": "OR",
+                  "name": "Oregon"
+                },
+                "isp": {
+                  "name": "Comcast Cable"
+                },
+                "organization": {
+                  "name": "Comcast Cable"
+                },
+                "coordinate": {
+                  "latitude": 45.537704,
+                  "longitude": -122.6006
+                },
+                "domainName": {
+                  "name": "comcast.net"
+                },
+                "networkSpeed": {
+                  "id": 2,
+                  "name": "CABLEDSL"
+                },
+                "source": "iovation",
+                "identifier": "90a392de-1e2c-38b4-bf5e-d45e38b21941"
+              }
+            },
+            "version": "drs.2"
+          }
+        }
+      }
+    },
+    "cust-auth": {
+      "id": "756cd378-d6f0-321c-bbe6-6404a07210fb",
+      "host": "pdxdv-custard02.vm.iovationnp.com",
+      "type": "cust-auth",
+      "time": "2017-01-04T21:37:51.212Z",
+      "duration": 0.132,
+      "request": {
+        "headers": {
+          "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36",
+          "x-forwarded-port": "8080",
+          "Accept-Encoding": "gzip",
+          "Authorization": "Basic Y3VzdGFyZDpjdXN0YXJk",
+          "x-forwarded-prefix": "/api/auth",
+          "x-txn-id": "756cd378-d6f0-321c-bbe6-6404a07210fb",
+          "x-subscriber": "210700",
+          "X-B3-Sampled": "0",
+          "X-B3-TraceId": "7cee64c5027785f0",
+          "Postman-Token": "1b820f61-86d0-ab6c-c283-de9d30122add",
+          "Content-Type": "application/json",
+          "Transfer-Encoding": "chunked",
+          "x-txn-date": "2017-01-04T21:37:51.174Z",
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "X-Forwarded-Host": "pdxdv-shellee01.vm.iovationnp.com",
+          "X-B3-ParentSpanId": "7cee64c5027785f0",
+          "X-Forwarded-Proto": "http",
+          "Host": "pdxdv-custard02.vm.iovationnp.com:8080",
+          "X-Span-Name": "http:/api/auth/custard/subscribers/210700/accounts/nimesh/authentication-checks",
+          "X-B3-SpanId": "cab4ef3ce2edbf7",
+          "X-netflix-httpclientname": "custardV1",
+          "x-user": "OLTP",
+          "X-Forwarded-For": "10.16.6.97",
+          "Netflix.NFHttpClient.Version": "1.0",
+          "Accept-Language": "en-US,en;q=0.8"
+        },
+        "method": "POST",
+        "url": "http://pdxdv-custard02.vm.iovationnp.com:8080/custard/subscribers/210700/accounts/nimesh/authentication-checks",
+        "body": {
+          "eugwip": "127.0.0.1",
+          "blackbox": "0400mTR4Z7+BQcwNf94lis1ztjVPc4aVJjdv/td1wvFEIh4JRCr09fS1rKthw7Wh2cfDVW4WxEWbm7/cRsn+DFXgyHVLKa5eUqvJ5dzgojLfFGvNZhMeU+JzHvEHXWNdw7fXmAC0AP0RCF4M9YLJcLTb+jC3o7rRuIcS0QFo8LmqA+UoDvlKqcW/vrGQX4MiEfl8hOobItdRVJYZMHwqr5fdmBaDGKtMaeMugqPh9thdd4OLg+9aginJmamvnOVDH3SzV6i8/tb5alAK/XRNo3H5dMIK6EAX6crirCO+6rf6B/s8/6pAZonv91U8NguKENqeSipYNscDiy7T7W+bd9sPisbGyX63UGtLsfA4ZwOK7G3ClrsFsu9EwYom0RP/1vg4YdgEfiwpXbKyUT11RqjqYfPfBp8j9ZgcSxMKzZMpFJQHzrT9i0BebMDhgphGlniWpiIn/4g7jAmajB1pNw18Bhah37+pYGavyP/U1+EY5mcwZ8YN8wmMvf9hXJfAlmTiXI4fx1tjAlHMRRfayCY1fbmZnC9N+MV72IdccHc397yjjO0ytH1uLbskyA1VRQ7wDX8icOWPZcy4Xo6JR+o8uNh2BeaMmRyX/AQJcg0+Z5BwJlBUbdEMUsfY3KAUWMTYYUcRNcJsz+1j3aE1Kav6TbwSyw9pfmqz6UuNnHpXbCqPaqS7dmS/Ocl5HQBNDFBWeVaYJEF00M2y5rEDAARtF2ONlKQFMFWIfGA9WPh4380ZhZzwCZq88PH1zBzchSJ3QbGQgO20LAJRKmh9kjFoTM7MGw/x38EwfznI74+q21k9i9j//7HIMso+dRnja0s5DJXVrMZwI26qjnjGuSHwyep9wXDoTKUQQlPiadkVLXwMpOFU/WEDIDnv2dxoebAfFDWHi00YdOGocPPOxaV733lHc/g+29iuZ/lrwsKFYh1C4MHuHozkPSBfcDhwAT1jlVRq3JKAXJJyhAFygJNecmNoya05r8BWL4vRfdwnJ5sUUA3pDXHzRas4/GRSXiLQOJa6U5ipFe/I8I7OQmtv8AXYYpvbyv1Lr78jk0VliedrZUGUiOXEdvkNNTM75Qsa4yvRhXnDkIu7S6rzjcWF1kYH7kwYhNA0JImTM7VMyC3ZxFa3nFzXi5XRFVJiVvvKzpv0XaWfq5PKygfgkr6Iw5WVh4PKPjFGGeGrHDQxh1hR6k9YyfqLiq8eT66jEqmg+BzPJgQZfUtu1ghNaO/eyFwFf1jKGg0RSdu3DZ2D0kHs4MFN6DxYoHNLkWrgAsQGp/y9lQYFS7Q3XMPf+2zpaNb92EGzovyp20KaNONrY9qtvi+ZdQsNnpQ2xqnhqterf32XFw6Je+1cul8Wh6qEvR04G6q+BgQxEBxebOPqXaRp6tcsepOd0aYAJ9vQFlhL6Lafs8+bgckvjt05APKsVO36L6OC0lXsR/Ogu1fJTRIQmuuvYVi5iS7fBsNJTtrOd+Mi9Tv+KQNydoT3pTie3JapPI+mzcGlP7h9qOmA9ZQiijn+k5g1ZS7Dq3OgeBgjoHoih95tJk9wzUhPDi/8ROUAsIi7NVB72kzyIWu7UQgjbynOx9gevMBLnZG+870pm1POtVACoepilOAGHugBC+m0Or7G5vEcNxLVbHWi4FSdxiRe33JGH8sp9B/aj6zL3tfFaJhe05cG542YuByl2ZAuabzWfAR0pEIClrzuYzNXGNe5km82EXqcOXo2oAv/M9iuONpYoNfJhbxpxYkhHmNOEU/WEkXJiFpVogTPBC1JFD0jwp8BYQjGSgGki63KXERTtEU4b2i0PWZ2JG9RoXHS73TcCOImBEwDJ8tYdI0=",
+          "configuration": {
+            "brsRulesetName": "default",
+            "similarityThreshold": 0.85
+          }
+        }
+      },
+      "response": {
+        "headers": {
+          "X-Frame-Options": "DENY",
+          "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+          "X-B3-SpanId": "cab4ef3ce2edbf7",
+          "X-Content-Type-Options": "nosniff",
+          "X-B3-Sampled": "0",
+          "X-B3-TraceId": "7cee64c5027785f0",
+          "Expires": "0",
+          "Pragma": "no-cache",
+          "X-Application-Context": "custard:deployed,swagger,cassandra,ensuredb",
+          "X-XSS-Protection": "1; mode=block",
+          "Date": "Wed, 04 Jan 2017 21:37:51 GMT",
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "status": 404,
+        "body": {
+          "path": "http://pdxdv-custard02.vm.iovationnp.com:8080/custard/subscribers/210700/accounts/nimesh/authentication-checks",
+          "code": 400
+        }
+      }
+    }
+  }
+}

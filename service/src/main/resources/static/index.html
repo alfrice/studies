@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+<head>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script language="JavaScript" src="js/replayer.js"></script>
+    <script language="JavaScript" src="js/replayer-websocket.js"></script>
+</head>
+
+<body class="replay">
+<header><h1>Replayer</h1></header>
+<div class="replay-body">
+    <main class="replay-content">
+        <div id="otherContent" class="rest-result-content"></div>
+        <div id="formHolder">
+
+            <div class="row">
+
+                <h1>Replay </h1>
+                <ol>
+                    <li>Select <i>Choose files</i> and add multiple NEW (those created by tlm-service) TLM typefiles.
+                    </li>
+                    <li>TLMS must be of one type intended for a single service (a custard auth check, for example)</li>
+                    <li>Enter the server, port and credentials and hit <i>Submit</i>.</li>
+                    <li>Results will be displayed in the right panel. See the console for additional details (errors particularly)</li>
+                </ol>
+                <div class="indent">
+                    <h2>Add valid tlm files:</h2>
+                    <h3 class="warning">TLM files are required to hit a SINGLE server.</h3>
+
+
+                    <div class="indent">
+                        <form id="uploadForm" name="transformForm" enctype="multipart/form-data" method="POST">
+                            <input id="fileInput" type="file" name="uploadingFiles"
+                                   onchange="updateTlmFileQueue();" multiple>
+
+                            <p>
+
+                                <b>Number of files</b>: <span id="fileNum">0</span>;
+                                <span id="fileNames" style="width: 100%"></span><br/>
+
+                                <b>Total size:</b> <span id="fileSize">0</span>
+                            </p>
+                        </form>
+
+                    </div>
+
+
+                    <h2>Server</h2>
+
+                    <div id="hostEdit" class="indent">
+
+                        <select id="protocol" onchange="updateUrl()">
+                            <option value="http">http</option>
+                            <option value="https">https</option>
+                        </select>
+                        Host: <input id="hostInput" type="url" label="host"
+                                     name="host" required="required" placeholder="host"/>
+                        Port: <input id="portInput" type="number" min="1000" max="9000" label="port" name="port"
+                                     width="25px" required="required" placeholder="port"/>
+                        <span id="configuredUrl"></span>
+                    </div>
+
+                    <h2>Server credentials</h2>
+                    <div class="indent">
+                        Username:<input id="un" maxlength="20" label="username" type="text" name="un"
+                                        required="required" placeholder="username"/></br>
+                        Password:<input id="pwd" maxlength="20" label="password" type="password" name="pwd"
+                                        required="required" placeholder="password"/>
+                    </div>
+                    <button id="submitButton" width="100" height="100" name="Submit" class="button"
+                            type="button" value="submit">submit
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <nav class="replay-nav">
+        <ul>
+            <li><a onclick="callGet('/ping')">ping</a></li>
+            <li><a onclick="callGet('/version')">version</a></li>
+            <li><a onclick="showHide('formHolder','otherContent')">replay</a></li>
+        </ul>
+    </nav>
+    <aside id="pushResults" class="replay-ads"></aside>
+</div>
+<footer id="footer">footer</footer>
+</body>

@@ -1,0 +1,25 @@
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+  activemq:
+      broker-url: failover:(tcp://pdxdvamqbe01.vm.iovationnp.com:61616,tcp://pdxdvamqbe02.vm.iovationnp.com:61616)?randomize=true&jms.useAsyncSend=false
+      user: mquser
+      password: sandbox2
+      pooled: true
+
+graphite:
+  host: pdxnpcarbon.iovationnp.com
+  port: 2013
+  group: replayer
+
+multipart:
+  enabled: true
+  max-file-size: 3Mb
+  max-request-size: 20Mb
+
+
+upload:
+  directory: replayer/uploads
+
+

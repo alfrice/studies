@@ -1,0 +1,26 @@
+project:
+    artifactId: clearkey-replayer
+    name: clearkey-replayer
+    version: 1.0.0-SNAPSHOT
+    description: Demo project for info endpoint
+
+info:
+    artifact: ${project.artifactId}
+    name: ${project.name}
+    description: ${project.description}
+    version: ${project.version}
+
+#Thresholds for fatal and warn logging
+fatalPerformanceThresholdInMillis: 1000
+warnPerformanceThresholdInMillis: 500
+
+maven:
+  version:
+    major: "@maven.majorVersion@"
+
+
+#Properties used by Profile unit tests
+properties:
+    profile.description: Development Environment Properties
+server:
+  port: 1234
